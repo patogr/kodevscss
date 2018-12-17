@@ -1,0 +1,19 @@
+{
+  "name": "kodevscss",
+  "version": "1.0.0",
+  "description": "Libreria edGrid adaptada para VUEjs",
+  "main": "global.scss",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Kodev (hola@kodev.co)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patogr/kodevscss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patogr/kodevscss/issues"
+  },
+  "homepage": "https://github.com/patogr/kodevscss#readme"
+}

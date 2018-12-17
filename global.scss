@@ -1,0 +1,43 @@
+$cssCore    : false;
+$cssHelpers : false; 
+$devMode    : false;
+
+// Selectores (clases) para flex-container y flex-item
+$container : ed-container; // Permite modificar el nombre de las clases usadas como contenedor e item.
+$item      : ed-item;
+
+// Ancho máximo para los contenedores
+$max-width : 1440px;
+
+// Seperación horizontal entre items (*2)
+$gutter : 1em;
+
+// Breakpoints
+$breakpoints : (
+  s  : 0,
+  m  : 640px,
+  l  : 1024px,
+  xl  : 1280px,
+  xxl : 1440px,
+  xxxl : 1920px
+);
+
+// Fracciones para calcular anchos de los items.
+$fractions : 3 6 ;
+
+
+//Componentes para la construccion.
+@import "./_core";
+@import "./_flexbox";
+@import "./_grid";
+@import "./_media";
+
+//Variables Globales SCSS y CSS
+@import "./vars";
+
+@mixin shadow{
+  box-shadow: 0em 0.5em 3em rgba(0, 0, 0, 0.25);
+  @include fromTo(s,l){
+    box-shadow: 0em 0.5em 1.2em rgba(0, 0, 0, 0.05);
+  }
+}
